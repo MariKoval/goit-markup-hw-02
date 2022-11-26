@@ -1,0 +1,204 @@
+:root{
+    --background-color-primary: #F5F5F5;
+    --background-color-secondary: #2196F3;
+    --color-primary: #212121;
+    --color-accent:#2196F3;
+}
+
+body {background-color: var(--background-color-primary);
+      color: var(--color-primary);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+    }
+
+.list {list-style: none;}
+
+.logo-top, .logo-bottom {
+text-decoration: none;
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19px;
+}
+
+.logo-top {color: #000000;
+}
+
+.logo-bottom {
+position: absolute;
+left: 215px;
+top: 3610px;
+color: #ffffff;
+}
+
+.letter {color:#2196F3} 
+
+.link {color: var(--color-primary);
+font-weight: 500;
+}
+.site-nav .link {
+text-decoration: none;
+line-height: 1.14px;
+letter-spacing: 0.02em;
+cursor: pointer;
+}
+.site-nav .link:hover, .site-nav .link:focus {color: var(--color-accent);}
+.site-nav .link-current {
+color: var(--color-accent);
+text-decoration: none; 
+font-weight: 500;
+line-height: 1.14px;
+letter-spacing: 0.02em;
+}
+
+.header-contacts .link {color: #757575;}
+.header-contact .link:hover, .header-contact .link:focus {color: var(--color-accent)}
+
+.hero {
+width: 1600px;
+height: 600px;
+left: 0px;
+top: 80px;
+background-color: #2F303A;}
+
+.hero-title {
+    position: absolute;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.advanteges .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.description {
+    color: #757575;
+    line-height: 1.71;
+}
+
+.members {
+    font-size: 16px;
+    line-height: 1.19;  
+    text-align: center;
+}
+.members .name {
+    font-weight: 500;
+    
+}
+.members .position {
+    color: #757575;
+}
+
+.title-project {
+font-weight: 700;
+font-size: 18px;
+line-height: 2; 
+letter-spacing: 0.06em;
+}
+
+.example {
+font-size: 16px;
+line-height: 1.88;
+}
+
+li {
+    list-style-type: none;
+  }
+
+.button {
+    font-family: 'Roboto';
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+   }
+
+.button-primary {
+    position: absolute;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+   
+}
+
+.button-secondary-act {
+    color: #FFFFFF;
+    background-color: var(--background-color-secondary);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+   
+}
+.button-secondary-calm {
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+ 
+}
+
+footer {
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2094px;
+    background-color: #2F303A;
+}
+
+.map {
+    position: absolute;
+    left: 215px;
+    top: 3640px;
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.71;
+    color: #FFFFFF;
+}
+
+.email, .tel {
+    position: absolute;
+    left: 215px;
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+.email:hover, .email:focus, .tel:hover, .tel:focus, .map:hover, .map:focus {
+color: var(--color-accent);
+}
+
+.email {top: 3670px;}
+.tel {top: 3700px;}
