@@ -1,0 +1,197 @@
+:root{
+    --background-color-primary: #F5F5F5;
+    --background-color-secondary: #2196F3;
+    --background-color-cards: #FFFFFF;
+    --backround-color-buttonhover: #188CE8;
+    --backround-color-buttoncalm: #F5F4FA;
+    --background-color-eyemagnet: #2F303A;
+    --color-primary: #212121;
+    --color-accent:#2196F3;
+    --color-logo:#000000;
+    --color-logo-title: #ffffff;
+    --color-description: #757575;
+}
+
+body {color: var(--color-primary);
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+    }
+
+.list {list-style: none;}
+
+.logo-top, .logo-bottom {
+text-decoration: none;
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19px;
+}
+
+.logo-top {color: var(--color-logo);
+}
+
+.logo-bottom {
+color: var(--color-logo-title);
+}
+
+.letter {color: var(--color-accent);
+} 
+
+.link {color: var(--color-primary);
+font-weight: 500;
+}
+.site-nav .link {
+text-decoration: none;
+line-height: 1.14px;
+letter-spacing: 0.02em;
+cursor: pointer;
+}
+.site-nav .link:hover, .site-nav .link:focus {color: var(--color-accent);}
+.site-nav .link-current {
+color: var(--color-accent);
+text-decoration: none; 
+font-weight: 500;
+line-height: 1.14px;
+letter-spacing: 0.02em;
+}
+
+.header-contacts .link {color: var(--color-description);}
+.header-contact .link:hover, .header-contact .link:focus {color: var(--color-accent)}
+
+footer, .hero {background-color: var(--background-color-eyemagnet);}
+.hero-title {
+    color: var(--color-logo-title);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.advanteges .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.visually-hidden {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+  }
+
+.description {
+    color: var(--color-description);
+    line-height: 1.71;
+}
+
+.members {
+    font-size: 16px;
+    line-height: 1.19;  
+    text-align: center;
+}
+.members .name {
+    font-weight: 500;
+    
+}
+.members .position {
+    color: var(--color-description);
+}
+.members-list {
+    background-color: var(--backround-color-buttoncalm);
+}
+
+.name-position {background: var(--background-color-cards);}
+
+.title-project {
+font-weight: 700;
+font-size: 18px;
+line-height: 2; 
+letter-spacing: 0.06em;
+}
+
+.example {
+font-size: 16px;
+line-height: 1.88;
+}
+
+li {
+    list-style-type: none;
+  }
+
+.button {
+    font-family: 'Roboto';
+    font-size: 16px;
+    text-align: center;
+   }
+
+.button-primary {
+    color: var(--color-logo-title);
+    background-color: var(--background-color-secondary);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-primary:hover, .button-primary:focus {background-color: var(--backround-color-buttonhover);}
+
+.button-secondary-act {
+    color: var(--color-logo-title);
+    background-color: var(--background-color-secondary);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+   
+}
+.button-secondary-calm {
+    background-color: var(--backround-color-buttoncalm);
+    font-weight: 500;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.63;
+    cursor: pointer;
+}
+
+.button-secondary-calm:hover, .button-secondary-calm:focus {
+    color: var(--color-logo-title);
+    background-color: var(--background-color-secondary);
+}
+
+.map {
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--color-logo-title);
+}
+
+.email, .tel {
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+.email:hover, .email:focus, .tel:hover, .tel:focus, .map:hover, .map:focus {
+color: var(--color-accent);
+}
