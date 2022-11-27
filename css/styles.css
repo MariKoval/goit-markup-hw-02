@@ -1,16 +1,20 @@
 :root{
     --background-color-primary: #F5F5F5;
     --background-color-secondary: #2196F3;
+    --background-color-cards: #FFFFFF;
+    --backround-color-buttonhover: #188CE8;
+    --backround-color-buttoncalm: #F5F4FA;
+    --background-color-eyemagnet: #2F303A;
     --color-primary: #212121;
     --color-accent:#2196F3;
+    --color-logo:#000000;
+    --color-logo-title: #ffffff;
+    --color-description: #757575;
 }
 
-body {background-color: var(--background-color-primary);
-      color: var(--color-primary);
+body {color: var(--color-primary);
       font-family: 'Roboto', sans-serif;
-      font-weight: 400;
       font-size: 14px;
-      letter-spacing: 0.03em;
     }
 
 .list {list-style: none;}
@@ -23,17 +27,15 @@ font-size: 26px;
 line-height: 1.19px;
 }
 
-.logo-top {color: #000000;
+.logo-top {color: var(--color-logo);
 }
 
 .logo-bottom {
-position: absolute;
-left: 215px;
-top: 3610px;
-color: #ffffff;
+color: var(--color-logo-title);
 }
 
-.letter {color:#2196F3} 
+.letter {color: var(--color-accent);
+} 
 
 .link {color: var(--color-primary);
 font-weight: 500;
@@ -53,24 +55,12 @@ line-height: 1.14px;
 letter-spacing: 0.02em;
 }
 
-.header-contacts .link {color: #757575;}
+.header-contacts .link {color: var(--color-description);}
 .header-contact .link:hover, .header-contact .link:focus {color: var(--color-accent)}
 
-.hero {
-width: 1600px;
-height: 600px;
-left: 0px;
-top: 80px;
-background-color: #2F303A;}
-
+footer, .hero {background-color: var(--background-color-eyemagnet);}
 .hero-title {
-    position: absolute;
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
-
-    color: #FFFFFF;
+    color: var(--color-logo-title);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -93,8 +83,21 @@ background-color: #2F303A;}
     text-transform: uppercase;
 }
 
+.visually-hidden {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+  }
+
 .description {
-    color: #757575;
+    color: var(--color-description);
     line-height: 1.71;
 }
 
@@ -108,8 +111,13 @@ background-color: #2F303A;}
     
 }
 .members .position {
-    color: #757575;
+    color: var(--color-description);
 }
+.members-list {
+    background-color: var(--backround-color-buttoncalm);
+}
+
+.name-position {background: var(--background-color-cards);}
 
 .title-project {
 font-weight: 700;
@@ -131,17 +139,11 @@ li {
     font-family: 'Roboto';
     font-size: 16px;
     text-align: center;
-    cursor: pointer;
    }
 
 .button-primary {
-    position: absolute;
-    width: 216px;
-    height: 50px;
-    left: 692px;
-    top: 430px;
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--color-logo-title);
+    background-color: var(--background-color-secondary);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -149,11 +151,13 @@ li {
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-   
+    cursor: pointer;
 }
 
+.button-primary:hover, .button-primary:focus {background-color: var(--backround-color-buttonhover);}
+
 .button-secondary-act {
-    color: #FFFFFF;
+    color: var(--color-logo-title);
     background-color: var(--background-color-secondary);
     font-weight: 500;
     font-size: 16px;
@@ -162,35 +166,27 @@ li {
    
 }
 .button-secondary-calm {
-    background-color: #F5F4FA;
+    background-color: var(--backround-color-buttoncalm);
     font-weight: 500;
     font-size: 16px;
+    font-family: inherit;
     line-height: 1.63;
     cursor: pointer;
- 
 }
 
-footer {
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2094px;
-    background-color: #2F303A;
+.button-secondary-calm:hover, .button-secondary-calm:focus {
+    color: var(--color-logo-title);
+    background-color: var(--background-color-secondary);
 }
 
 .map {
-    position: absolute;
-    left: 215px;
-    top: 3640px;
     text-decoration: none;
     font-style: normal;
     line-height: 1.71;
-    color: #FFFFFF;
+    color: var(--color-logo-title);
 }
 
 .email, .tel {
-    position: absolute;
-    left: 215px;
     text-decoration: none;
     font-style: normal;
     line-height: 1.71;
@@ -199,6 +195,3 @@ footer {
 .email:hover, .email:focus, .tel:hover, .tel:focus, .map:hover, .map:focus {
 color: var(--color-accent);
 }
-
-.email {top: 3670px;}
-.tel {top: 3700px;}
