@@ -1,7 +1,6 @@
 :root{
-    --background-color-primary: #F5F5F5;
+    --background-color-base: #FFFFFF;
     --background-color-secondary: #2196F3;
-    --background-color-cards: #FFFFFF;
     --backround-color-buttonhover: #188CE8;
     --backround-color-buttoncalm: #F5F4FA;
     --background-color-eyemagnet: #2F303A;
@@ -12,7 +11,8 @@
     --color-description: #757575;
 }
 
-body {color: var(--color-primary);
+body {background-color: var(--background-color-base);
+      color: var(--color-primary);
       font-family: 'Roboto', sans-serif;
       font-size: 14px;
     }
@@ -117,7 +117,7 @@ footer, .hero {background-color: var(--background-color-eyemagnet);}
     background-color: var(--backround-color-buttoncalm);
 }
 
-.name-position {background: var(--background-color-cards);}
+.name-position {background: var(--background-color-base);}
 
 .title-project {
 font-weight: 700;
