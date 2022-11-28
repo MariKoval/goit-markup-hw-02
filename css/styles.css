@@ -24,7 +24,7 @@ text-decoration: none;
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-size: 26px;
-line-height: 1.19px;
+line-height: 1.19;
 }
 
 .logo-top {color: var(--color-logo);
@@ -118,6 +118,18 @@ footer, .hero {background-color: var(--background-color-eyemagnet);}
 }
 
 .name-position {background: var(--background-color-base);}
+
+.name, .position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.name {
+    font-weight: 500;
+    color: var (--color-primary);
+}
+.position {color: var(--color-description);}
 
 .title-project {
 font-weight: 700;
