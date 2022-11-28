@@ -127,7 +127,6 @@ footer, .hero {background-color: var(--background-color-eyemagnet);}
 }
 .name {
     font-weight: 500;
-    color: var (--color-primary);
 }
 .position {color: var(--color-description);}
 
